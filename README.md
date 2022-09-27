@@ -1,8 +1,8 @@
-#  Hardhat-Starter-Template
+# Signature Verifications with Solidity 
 
-## OVERVIEW
+Offchain signed messages, with on chain verfication using an Ethereum message signing format.
 
-Includes deployment configurations, testing framework, contract upgrades pattern, gas usage report, security analysys audit, test coverage report.. did I also mention it's blazingly fast 😏
+<img width="892" alt="Screen Shot 2022-09-27 at 11 34 32 am" src="https://user-images.githubusercontent.com/7098556/192410825-2fda1715-0cae-4df5-aa0b-8f4c5ca1ef6d.png">
 
 ## GET STARTED
 
@@ -32,29 +32,3 @@ Available recipes:
 
 - Run the unit tests with `just test`
 - Statically analyse code for vulnerabilities with `just audit` 
-
-
-### Starting a new project from this template
-
-- Clean the workspace (to start a new project, removing example code and scripts) using `just clean` 
-- Create your solidity code in `/contracts`, tests in `/test` and deploy/verify scripts in `/scripts`
-
-
-## FAQ
-
-### Performance optimizations
-For faster runs of your tests and scripts, consider skipping ts-node's type checking by setting the environment variable TS_NODE_TRANSPILE_ONLY to 1 in hardhat's environment. For more details see the documentation.
-
-
-### Husky
-
-ERROR ON COMMIT -> `husky > pre-commit hook failed (add --no-verify to bypass)`
-RESOLUTION -> Remove errors from your smart contracts, found running `npm run lint`, or commit using --no-amend flag to temporarily bypass.
-
-
-## Error running audit task
-Ensure [Slither](https://github.com/crytic/slither) is installed and in your $PATH
-
-## DEMO
-
-![demo](https://i.ibb.co/tY00DR0/Screen-Shot-2022-07-13-at-1-57-15-pm.png)
